@@ -100,13 +100,13 @@ a {
 }
 
 #abt-title {
-    background-image: url(/imgs/stem-students.jpg);
+    background-image: url(../imgs/stem-students.jpg);
     background-size: cover;
     background-position: center;
 }
 
 #stem-title {
-    background-image: url(/imgs/computer.jpg);
+    background-image: url(../imgs/computer.jpg);
     background-size: cover;
     background-position: 0 15%;
 }
@@ -178,11 +178,11 @@ a {
 }
 
 #tsa-picture {
-    background-image: url("/imgs/nationals.jpg");
+    background-image: url("../imgs/nationals.jpg");
 }
 
 #school-picture {
-    background-image: url("/imgs/colorado.jpg");
+    background-image: url("../imgs/colorado.jpg");
 }
 
 .slide .cover {
@@ -200,15 +200,15 @@ a {
 }
 
 #abt1 {
-    background-image: url("/imgs/mtns.jpg");
+    background-image: url("../imgs/mtns.jpg");
 }
 
 #abt2 {
-    background-image: url("/imgs/catapult.jpg");
+    background-image: url("../imgs/catapult.jpg");
 }
 
 #abt3 {
-    background-image: url("/imgs/conference.jpg");
+    background-image: url("../imgs/conference.jpg");
 }
 
 #categories {
