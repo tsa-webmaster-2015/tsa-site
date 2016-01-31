@@ -13,10 +13,11 @@ $(document).ready(function () {
         window.history.pushState("string", "Title", "/?" + id);
     });
 
-
     $(window).scroll(function () {
-        var ht = $('.block').parent().children('.txt').height();
-        $('.block').height(ht);
-        console.log($('.block').height());
+        $('.block').each(function () {
+            var ht = $(this).parent().children('.txt').height();
+            $(this).height(ht);
+        });
     });
+
 });

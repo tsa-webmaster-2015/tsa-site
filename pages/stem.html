@@ -1,0 +1,42 @@
+<div class="title" id='stem-title'>
+    <div class='cover'>
+        <p>STEM CLASSES AT OUR SCHOOL</p>
+    </div>
+</div>
+<div class='info'>
+    <div class='ctr'>
+        <div class='block'></div>
+        <div class='txt'>
+            Our school offers a wide variety of classes in engineering, science, technology, business and math. Our STEM program is one of the most robust in the state. We have more than fifty math, science, and engineering classes, with eleven of them being APs and a total of fourteen with an option for college credit, one of the highest totals in the state. We also offers many business, marketing, and entrepreneurship classes which will help aspiring STEM students compete in the modern world. Click on the categories below to see some of the classes we offer to STEM students.
+        </div>
+    </div>
+</div>
+<div id='categories'>
+    <div class='category' id='math'>
+        <h1>Math</h1>
+        <p>Our school offers many math classes, ranging from AP Calculus BC and Differential Equations for higher-level students to Algebra 1 and Geometry for those who aren't as math-oriented. The level of flexibility in our school's math program is large, and someone can take any math class they want. Really good at statistics but not so hot on calculus? Take AP Stat and stay back in Calculus AB. Want to learn more about algebra without having to take Algebra II again? Just go into ACC College Algebra or College Trig to brush up on those skills. There is truly something for everyone. </p>
+    </div>
+    <div class='category' id='science'>
+        <h1>Science</h1>
+        <p>Our science program is perhaps our most flexible category. Our school offers a wide variety of science courses, including eight different biology and biotechnology courses, four chemistry classes, and four physics classes. We also offer unique and interesting Science electives, such as astronomy, zoology, environmental science (and AP environmental science!) and psychology. Our students are receiving a premium-grade scientific education, and many of our graduates have gone on to CU, CSU, the Colorado School of Mines, and many out-of-state colleges to study science and go into scientific fields.</p>
+    </div>
+    <div class='category' id='engineering'>
+        <h1>Engineering</h1>
+        <p>The engineering classes offered at our school are widely varied and high-quality. We offer such courses as game design, web design, SolidWorks, and even AP Computer Science. There are also four different levels of the Engineering course and three of Technology, giving our program unprecedented depth. Engineering and technology are stressed at our school, even to the point that many students plan on going into these types of careers when they graduate, and that's part of the reason that our TSA chapter has so many members.</p>
+    </div>
+    <div class='category' id='business'>
+        <h1>Business</h1>
+        <p>Not to be overlooked, the business classes at our school are perhaps some of the most impressive of all. There are fourteen different business classes at our school, at every level of understanding and previous experience, and they are all geared toward providing a good business experience to high school graduates, a kind of in-depth understanding of business principles, ethics, and practices that might not be available elsewhere. There are classes in business law, marketing principles, international business, sports marketing, consumer behavior, entrepreneurship, customer service, and many more, making our business program not only very deep, but very comprehensive as well.</p>
+    </div>
+</div>
+<script>
+    $(document).ready(function () {
+        $('.category p').each(function () {
+            $(this).hide();
+        });
+
+        $('.category h1').click(function () {
+            $(this).parent().children("p").slideToggle();
+        })
+    })
+</script>

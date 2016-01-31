@@ -19,6 +19,11 @@ body {
     line-height: 1.8;
 }
 
+a {
+    text-decoration: none;
+    color: #2980b9;
+}
+
 .inner {
     vertical-align: middle;
     margin: 0;
@@ -66,26 +71,53 @@ body {
     cursor: pointer;
 }
 
-.fa-twitter {
-    color: #4099FF;
+#footer {
+    padding: 15px 60px;
+    padding-bottom: 30px;
+    box-sizing: border-box;
+    background-color: #2980b9;
+    color: #ecf0f1;
+    font-family: Slim Joe;
+    font-size: 30px;
+    text-align: center;
 }
 
-.fa-facebook {
-    color: #3B5998;
+#footer img {
+    max-height: 100px;
+    top: 30px;
+    margin-right: 20px;
 }
 
-.fa-google-plus {
-    color: #DC4E41;
+#footer img,
+#footer p {
+    display: inline-block;
+    position: relative;
 }
 
 #title-sec {
     background-image: url("../imgs/stars.jpg");
     background-size: cover;
-    width: 100%;
-    max-height: calc(100% - 90px);
 }
 
-#home-txt {
+#abt-title {
+    background-image: url(/imgs/stem-students.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+#stem-title {
+    background-image: url(/imgs/computer.jpg);
+    background-size: cover;
+    background-position: 0 15%;
+}
+
+.section {
+    width: 100%;
+    max-height: calc(100% - 90px);
+    font-size: 30px;
+}
+
+.txt {
     width: calc(100% - 50px);
     margin-left: 50px;
 }
@@ -99,7 +131,13 @@ body {
     height: 100%;
 }
 
-#info {
+.cover {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 10, 0.55);
+}
+
+.info {
     padding: 75px 100px;
     font-size: 20px;
     font-family: Open Sans;
@@ -112,17 +150,93 @@ body {
     float: left;
 }
 
-#info span {
+#home-txt span {
     font-size: 30px;
     font-family: Slim Joe;
 }
 
-#tsa-picture {
+.slide,
+.title {
     width: 100%;
-    height: 500px;
-    color: white;
-    font-family: Open Sans;
-    background-image: url("/imgs/nationals.jpg");
     background-size: cover;
     text-align: center;
+}
+
+.title {
+    height: 700px;
+    font-size: 60px;
+}
+
+.slide {
+    height: 1100px;
+}
+
+.slide,
+.title {
+    font-family: Slim Joe;
+    color: #ecf0f1;
+}
+
+#tsa-picture {
+    background-image: url("/imgs/nationals.jpg");
+}
+
+#school-picture {
+    background-image: url("/imgs/colorado.jpg");
+}
+
+.slide .cover {
+    padding: 520px 100px;
+    box-sizing: border-box;
+}
+
+.title .cover {
+    padding: 250px 100px;
+    box-sizing: border-box;
+}
+
+.slide .cover p {
+    font-size: 30px;
+}
+
+#abt1 {
+    background-image: url("/imgs/mtns.jpg");
+}
+
+#abt2 {
+    background-image: url("/imgs/catapult.jpg");
+}
+
+#abt3 {
+    background-image: url("/imgs/conference.jpg");
+}
+
+#categories {
+    padding: 0 40px 30px 40px;
+    background-color: #ecf0f1;
+}
+
+.category {
+    padding: 10px 40px;
+    font-family: Source Sans Pro;
+    color: #ecf0f1;
+    background-color: #2980b9;
+    margin-bottom: 10px;
+}
+
+.category h1 {
+    cursor: pointer;
+    font-family: Slim Joe;
+    font-size: 30px;
+}
+
+.category p {
+    font-size: 18px;
+}
+
+#contact-h1 {
+    padding: 30px 50px;
+    background-color: #ecf0f1;
+    margin: 0;
+    font-family: Slim Joe;
 }
