@@ -29,3 +29,11 @@
         <p>Our school was graded in the top third of Colorado schools in academic proficiency, with a 95.5% four-year graduation rate and high grades in math and science.</p>
     </div>
 </div>
+<script>
+    $(window).scroll(function () {
+        $('.block').each(function () {
+            var ht = $(this).parent().children('.txt').height();
+            $(this).height(ht);
+        });
+    });
+</script>

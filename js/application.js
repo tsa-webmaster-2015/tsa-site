@@ -13,11 +13,4 @@ $(document).ready(function () {
         window.history.pushState("string", "Title", "/?" + id);
     });
 
-    $(window).scroll(function () {
-        $('.block').each(function () {
-            var ht = $(this).parent().children('.txt').height();
-            $(this).height(ht);
-        });
-    });
-
 });
