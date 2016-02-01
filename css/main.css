@@ -246,16 +246,23 @@ a {
         height: auto;
         padding: 10px 0;
     }
+    .navitem {
+        display: block;
+        font-size: 20px;
+    }
     .nav span {
         display: block;
         padding: 10px 0;
     }
+    .info {
+        padding: 10px 10px;
+    }
+    .ctr {
+        width: 100%;
+    }
     .txt {
         font-size: 20px;
-    }
-    #content {
-        width: 90%;
-        margin: 25px auto 50px;
+        width: 100%;
     }
     img {
         -webkit-transform: scale(1);
