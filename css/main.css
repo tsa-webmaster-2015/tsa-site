@@ -252,6 +252,53 @@ h2 {
     font-family: Slim Joe;
 }
 
+#teachers {
+    width: 100%;
+    display: table;
+    background-color: #ecf0f1;
+}
+
+.teacher {
+    display: table-cell;
+    text-align: center;
+    padding: 20px 30px;
+}
+
+.teacher h1 {
+    font-size: 20px;
+    font-family: Slim Joe;
+}
+
+.teacher h2 {
+    font-size: 15px;
+    margin-top: -15px;
+}
+
+.teacher-img {
+    height: 200px;
+    width: 200px;
+    border-radius: 125px;
+    background-size: cover;
+    background-position: center;
+    margin-left: calc(100% / 2 - 100px);
+}
+
+#oosterhouse {
+    background-image: url(../imgs/teachers/oosterhouse.png);
+}
+
+#allison {
+    background-image: url(../imgs/teachers/allison.png);
+}
+
+#llewis {
+    background-image: url(../imgs/teachers/allison.png);
+}
+
+#padjen {
+    background-image: url(../imgs/teachers/padjen.png);
+}
+
 @media (max-width: 50em) {
     nav {
         height: auto;
