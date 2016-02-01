@@ -134,7 +134,7 @@ a {
 .cover {
     width: 100%;
     height: 100%;
-    background-color: rgba(0, 0, 10, 0.55);
+    background-color: rgba(0, 0, 10, 0.7);
 }
 
 .info {
@@ -228,6 +228,11 @@ a {
     cursor: pointer;
     font-family: Slim Joe;
     font-size: 30px;
+}
+
+h2 {
+    font-family: Slim Joe;
+    font-size: 20px;
 }
 
 .category p {
