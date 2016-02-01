@@ -38,5 +38,12 @@
         $('.category h1').click(function () {
             $(this).parent().children("p").slideToggle();
         })
+
+        $(window).scroll(function () {
+            $('.block').each(function () {
+                var ht = $(this).parent().children('.txt').height();
+                $(this).height(ht);
+            });
+        });
     })
 </script>

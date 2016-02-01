@@ -26,3 +26,11 @@
         <p>Our TSA chapter sent fifteen students to the TSA national conferences last year, to compete with over 6300 others from around the world.</p>
     </div>
 </div>
+<script>
+    $(window).scroll(function () {
+        $('.block').each(function () {
+            var ht = $(this).parent().children('.txt').height();
+            $(this).height(ht);
+        });
+    });
+</script>
