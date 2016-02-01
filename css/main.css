@@ -21,7 +21,7 @@ body {
 
 a {
     text-decoration: none;
-    color: #2980b9;
+    color: #ecf0f1;
 }
 
 .inner {
@@ -239,4 +239,28 @@ a {
     background-color: #ecf0f1;
     margin: 0;
     font-family: Slim Joe;
+}
+
+@media (max-width: 50em) {
+    .nav {
+        height: auto;
+        padding: 10px 0;
+    }
+    .nav span {
+        display: block;
+        padding: 10px 0;
+    }
+    .txt {
+        font-size: 20px;
+    }
+    #content {
+        width: 90%;
+        margin: 25px auto 50px;
+    }
+    img {
+        -webkit-transform: scale(1);
+        -ms-transform: scale(1);
+        -o-transform: scale(1);
+        transform: scale(1);
+    }
 }
