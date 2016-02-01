@@ -13,4 +13,14 @@ $(document).ready(function () {
         window.history.pushState("string", "Title", "/?" + id);
     });
 
+    $(document).on('click', '.category h1', function () {
+        $(this).parent().children("p").slideToggle();
+    })
+
+    $(window).scroll(function () {
+        $('.block').each(function () {
+            var ht = $(this).parent().children('.txt').height();
+            $(this).height(ht);
+        });
+    });
 });
