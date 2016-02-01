@@ -1,5 +1,5 @@
 $(document).ready(function () {
-    $('.nav').hide().fadeIn();
+    $('nav').hide().fadeIn();
     var page = location.search.substring(1, 2000);
     if (page) {
         $('#content').load('/pages/' + page + '.html');
@@ -7,7 +7,7 @@ $(document).ready(function () {
         $('#content').load('/pages/home.html');
     }
     $('#content').fadeIn();
-    $('.nav').find('h3').click(function () {
+    $('nav').find('h3').click(function () {
         id = this.id
         $('#content').load('/pages/' + id + '.html').hide().fadeIn();
         window.history.pushState("string", "Title", "/?" + id);
