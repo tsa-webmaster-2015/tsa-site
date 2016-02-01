@@ -255,6 +255,7 @@ h2 {
 #teachers {
     width: 100%;
     display: table;
+    table-layout: fixed;
     background-color: #ecf0f1;
 }
 
@@ -281,6 +282,7 @@ h2 {
     background-size: cover;
     background-position: center;
     margin-left: calc(100% / 2 - 100px);
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.5);
 }
 
 #oosterhouse {
@@ -292,7 +294,7 @@ h2 {
 }
 
 #llewis {
-    background-image: url(../imgs/teachers/allison.png);
+    background-image: url(../imgs/teachers/llewis.png);
 }
 
 #padjen {
@@ -302,15 +304,18 @@ h2 {
 @media (max-width: 50em) {
     nav {
         height: auto;
-        padding: 10px 0;
+        padding: 20px 0;
     }
     .navitem {
+        width: 100vw;
         display: block;
+        text-align: center;
         font-size: 20px;
+        padding: 0;
     }
     nav span {
         display: block;
-        padding: 10px 0;
+        padding: 20px 0;
     }
     .info {
         padding: 10px 10px;
@@ -319,8 +324,16 @@ h2 {
         width: 100%;
     }
     .txt {
-        font-size: 20px;
+        font-size: 15px;
+        margin-left: -5px;
         width: 100%;
+        text-align: center;
+    }
+    .block {
+        display: none;
+    }
+    .slide {
+        font-size: 20px;
     }
     img {
         -webkit-transform: scale(1);
