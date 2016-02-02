@@ -304,13 +304,13 @@ h2 {
 @media (max-width: 50em) {
     nav {
         height: auto;
-        padding: 20px 0;
+        padding: 10px 0;
     }
     .navitem {
         width: 100vw;
         display: block;
         text-align: center;
-        font-size: 20px;
+        font-size: 15px;
         padding: 0;
     }
     nav span {
@@ -318,7 +318,7 @@ h2 {
         padding: 20px 0;
     }
     .info {
-        padding: 10px 10px;
+        padding: 30px 20px;
     }
     .ctr {
         width: 100%;
@@ -332,13 +332,45 @@ h2 {
     .block {
         display: none;
     }
-    .slide {
-        font-size: 20px;
+    .slide .cover p {
+        font-size: 15px;
+    }
+    .title .cover p {
+        font-size: 30px;
+    }
+    .slide .cover {
+        padding: 150px 50px;
+    }
+    .slide,
+    .title {
+        height: 600px;
+    }
+    .title .cover {
+        padding-top: 150px;
     }
     img {
         -webkit-transform: scale(1);
         -ms-transform: scale(1);
         -o-transform: scale(1);
         transform: scale(1);
+    }
+    #footer {
+        font-size: 15px;
+    }
+    #footer img {
+        max-height: 50px;
+        margin-bottom: 40px;
+    }
+    .category {
+        padding: 10px 20px;
+    }
+    .category p {
+        font-size: 15px;
+    }
+    .category h1 {
+        font-size: 18px;
+    }
+    .teacher {
+        display: block;
     }
 }
