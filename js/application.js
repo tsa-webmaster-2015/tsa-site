@@ -11,8 +11,7 @@ $(document).ready(function () {
     $('nav').find('h3').click(function () {
         id = this.id
         $('#content').load('/pages/' + id + '.html').hide().fadeIn();
-        $('#content').load(function () {
-        })
+        $('#content').load(function () {})
         window.history.pushState("string", "Title", "/?" + id);
     });
 

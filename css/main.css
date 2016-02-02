@@ -376,4 +376,13 @@ h2 {
     .teacher {
         display: block;
     }
+    #stem-title .cover {
+        padding-top: 20%;
+    }
+}
+
+@media (max-width: 30em) {
+    #stem-title .cover {
+        padding-top: 12%;
+    }
 }
