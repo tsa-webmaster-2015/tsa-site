@@ -189,7 +189,9 @@ nav {
 }
 
 .slide .cover {
-    padding: 520px 100px;
+    padding-top: 50px;
+    padding-left: 100px;
+    padding-right: 100px;
     box-sizing: border-box;
 }
 
@@ -324,7 +326,7 @@ h2 {
         width: 100%;
     }
     .txt {
-        font-size: 15px;
+        font-size: 13px;
         margin-left: -5px;
         width: 100%;
         text-align: center;
@@ -339,14 +341,15 @@ h2 {
         font-size: 30px;
     }
     .slide .cover {
-        padding: 150px 50px;
+        padding-left: 50px;
+        padding-right: 50px;
     }
     .slide,
     .title {
-        height: 600px;
+        height: 400px;
     }
     .title .cover {
-        padding-top: 150px;
+        padding-top: 25%;
     }
     img {
         -webkit-transform: scale(1);

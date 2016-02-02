@@ -7,20 +7,35 @@ $(document).ready(function () {
         $('#content').load('/pages/home.html');
     }
     $('#content').fadeIn();
+
     $('nav').find('h3').click(function () {
         id = this.id
         $('#content').load('/pages/' + id + '.html').hide().fadeIn();
+        $('#content').load(function () {
+        })
         window.history.pushState("string", "Title", "/?" + id);
     });
 
     $(document).on('click', '.category h1', function () {
         $(this).parent().children("p").slideToggle();
-    })
+    });
 
     $(window).scroll(function () {
-        $('.block').each(function () {
-            var ht = $(this).parent().children('.txt').height();
-            $(this).height(ht);
-        });
+        blockSizing();
+        textCenter();
     });
 });
+
+function blockSizing() {
+    $('.block').each(function () {
+        var ht = $(this).parent().children('.txt').height();
+        $(this).height(ht);
+    });
+}
+
+function textCenter() {
+    $('.slide > .cover').each(function () {
+        var ht = $(this).children('p').height();
+        $(this).css('padding-top', $(this).height() / 2 - ht / 2)
+    })
+}
