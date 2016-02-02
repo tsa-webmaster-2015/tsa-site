@@ -23,18 +23,18 @@ $(document).ready(function () {
         blockSizing();
         textCenter();
     });
+
+    function blockSizing() {
+        $('.block').each(function () {
+            var ht = $(this).parent().children('.txt').height();
+            $(this).height(ht);
+        });
+    }
+
+    function textCenter() {
+        $('.slide > .cover').each(function () {
+            var ht = $(this).children('p').height();
+            $(this).css('padding-top', $(this).height() / 2 - ht / 2)
+        })
+    }
 });
-
-function blockSizing() {
-    $('.block').each(function () {
-        var ht = $(this).parent().children('.txt').height();
-        $(this).height(ht);
-    });
-}
-
-function textCenter() {
-    $('.slide > .cover').each(function () {
-        var ht = $(this).children('p').height();
-        $(this).css('padding-top', $(this).height() / 2 - ht / 2)
-    })
-}
